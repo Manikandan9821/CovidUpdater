@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="10dp"
+    >
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:background="@color/colorWhite"
+        android:padding="10dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_bg"
+            android:padding="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/Syptoms_image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/colorWhite"
+
+                >
+            </ImageView>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/textSymptoms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="dry cough"
+                android:textColor="@color/colorBlack"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:id="@+id/textSymptomsdetails"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/sample_text"
+                android:textColor="@color/colorBlack"
+                android:textSize="12dp"
+                android:textStyle="normal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorAccent"
+    >
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorPrimary"
+        tools:ignore="MissingConstraints"/>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       >
+
+       <com.google.android.material.appbar.AppBarLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/appBar_Layout"
+           >
+       <include
+           layout="@layout/app_bar_layout"
+           android:id="@+id/main_page_toolbar"
+           style="@style/AlertDialog"
+           >
+       </include>
+       </com.google.android.material.appbar.AppBarLayout>
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Worldwide Cases Overview"
+           android:textColor="@color/colorWhite"
+           android:textAlignment="center"
+           android:textSize="23dp"
+           android:textStyle="bold"
+           android:layout_marginTop="10dp"
+           />
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        >
+
+
+       <androidx.cardview.widget.CardView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:padding="10dp"
+           app:cardElevation="10dp"
+           app:cardCornerRadius="5dp"
+           android:background="@color/colorWhite"
+           android:layout_margin="10dp"
+           >
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:padding="10dp"
+               >
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="INFECTED"
+                   android:textSize="20sp"
+                   android:textColor="@color/colorBlack"
+                   android:textStyle="normal"
+                   android:layout_margin="5dp"
+                   android:textAlignment="center"
+                   />
+               <TextView
+                   android:id="@+id/infected"
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:text="462513"
+                   android:textSize="20sp"
+                   android:layout_weight="1"
+                   android:textColor="@color/colorRed"
+                   android:textStyle="bold"
+                   android:textAlignment="center"
+
+                   />
+
+           </LinearLayout>
+
+       </androidx.cardview.widget.CardView>
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="horizontal"
+           >
+
+           <androidx.cardview.widget.CardView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:padding="10dp"
+               app:cardElevation="10dp"
+               app:cardCornerRadius="5dp"
+               android:layout_weight="1"
+               android:background="@color/colorWhite"
+               android:layout_margin="10dp"
+               >
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:padding="10dp"
+                   >
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="RECOVERED"
+                       android:textSize="20sp"
+                       android:textColor="@color/colorBlack"
+                       android:textStyle="normal"
+                       android:layout_margin="5dp"
+                       android:textAlignment="center"
+                       />
+                   <TextView
+                       android:id="@+id/recovered"
+                       android:layout_width="match_parent"
+                       android:layout_height="0dp"
+                       android:text="235487"
+                       android:textSize="20sp"
+                       android:layout_weight="1"
+                       android:textColor="@color/colorGreen"
+                       android:textStyle="bold"
+                       android:textAlignment="center"
+
+                       />
+
+               </LinearLayout>
+
+           </androidx.cardview.widget.CardView>
+
+           <androidx.cardview.widget.CardView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:padding="10dp"
+               app:cardElevation="10dp"
+               app:cardCornerRadius="5dp"
+               android:layout_weight="1"
+               android:background="@color/colorWhite"
+               android:layout_margin="10dp"
+               >
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:padding="10dp"
+                   >
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="DECEASED"
+                       android:textSize="20sp"
+                       android:textColor="@color/colorBlack"
+                       android:textStyle="normal"
+                       android:layout_margin="5dp"
+                       android:textAlignment="center"
+                       />
+                   <TextView
+                       android:id="@+id/deaths"
+                       android:layout_width="match_parent"
+                       android:layout_height="0dp"
+                       android:text="445893"
+                       android:textSize="20sp"
+                       android:layout_weight="1"
+                       android:textColor="@color/colorGrey"
+                       android:textStyle="bold"
+                       android:textAlignment="center"
+
+                       />
+
+               </LinearLayout>
+
+           </androidx.cardview.widget.CardView>
+
+       </LinearLayout>
+          <LinearLayout
+              android:id="@+id/contStrated"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:padding="10dp"
+              android:layout_marginLeft="20dp"
+              android:layout_marginRight="20dp"
+              android:background="@drawable/bg_white"
+              android:orientation="horizontal"
+              >
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Countries Wise Updates"
+                  android:textSize="17sp"
+                  android:layout_weight="1"
+                  android:textColor="@color/colorPrimary"
+                  android:textStyle="bold"
+                  android:layout_margin="10dp"
+                  android:layout_gravity="center"
+                  />
+
+              <ImageButton
+                  android:layout_width="40dp"
+                  android:layout_height="40dp"
+                  android:textSize="15sp"
+                  android:textColor="@color/colorWhite"
+                  android:background="@color/colorPrimary"
+                  android:textStyle="bold"
+                  android:layout_margin="5dp"
+                  android:src="@drawable/ic_arrow"
+                  android:id="@+id/btn_countires_go"
+                  />
+
+          </LinearLayout>
+    </LinearLayout>
+
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginTop="5dp"
+           >
+
+           <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Symptoms"
+           android:textColor="@color/colorGrey"
+           android:textSize="22dp"
+           android:textStyle="bold"
+           android:layout_marginTop="10dp"
+           android:layout_marginLeft="15dp"
+           android:layout_weight="1"
+           />
+
+           <TextView
+               android:id="@+id/btnviewsymptoms"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="view all"
+               android:textColor="@color/colorGrey"
+               android:textSize="12dp"
+               android:textStyle="normal"
+               android:layout_marginTop="10dp"
+               android:layout_marginRight="15dp"
+
+               />
+
+       </LinearLayout>
+
+       <androidx.recyclerview.widget.RecyclerView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/symptoms_recyleview"
+           android:orientation="horizontal"
+           tools:listitem="@layout/item_symptoms"
+           app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+           >
+       </androidx.recyclerview.widget.RecyclerView>
+
+
+       <androidx.cardview.widget.CardView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="10dp"
+           android:padding="10dp"
+           app:cardCornerRadius="5dp"
+           app:cardElevation="10dp"
+           app:cardBackgroundColor="@color/colorPrimary"
+           >
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="130dp"
+           android:layout_margin="10dp"
+           android:orientation="horizontal"
+           android:padding="10dp"
+           >
+
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginLeft="10dp"
+               android:layout_weight="1"
+               android:orientation="vertical"
+               android:padding="10dp"
+               android:background="@color/colorPrimary"
+               >
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="To Know More About COVID-19"
+                   android:textColor="@color/colorWhite"
+                   android:textSize="20sp"
+                   android:textStyle="bold"
+                   android:layout_marginLeft="10dp"
+                   />
+
+
+               <Button
+                   android:id="@+id/view_btn_corona"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="More Info"
+                   android:textColor="@color/colorPrimary"
+                   android:textSize="14sp"
+                   android:textStyle="bold"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginTop="10dp"
+                   android:textAllCaps="false"
+                   android:background="@color/colorWhite"
+                   android:paddingLeft="10dp"
+                   android:paddingRight="10dp"
+                   />
+
+           </LinearLayout>
+
+
+               <ImageView
+                   android:layout_width="100dp"
+                   android:layout_height="105dp"
+                   android:src="@drawable/girl"
+                   android:layout_gravity="center"
+                   ></ImageView>
+
+
+       </LinearLayout>
+
+       </androidx.cardview.widget.CardView>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Precautions"
+               android:textColor="@color/colorGrey"
+               android:textSize="22dp"
+               android:textStyle="bold"
+               android:layout_marginTop="10dp"
+               android:layout_marginLeft="15dp"
+               android:layout_weight="1"
+               />
+
+           <TextView
+               android:id="@+id/btnviewPrecautions"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="view all"
+               android:textColor="@color/colorGrey"
+               android:textSize="12dp"
+               android:textStyle="normal"
+               android:layout_marginTop="10dp"
+               android:layout_marginRight="15sp"
+
+               />
+
+       </LinearLayout>
+
+       <androidx.recyclerview.widget.RecyclerView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/recyleviewpreacutions"
+           android:orientation="horizontal"
+           tools:listitem="@layout/item_precautions"
+           app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+           >
+       </androidx.recyclerview.widget.RecyclerView>
+
+   </LinearLayout>
+
+</RelativeLayout>
+
+</ScrollView>

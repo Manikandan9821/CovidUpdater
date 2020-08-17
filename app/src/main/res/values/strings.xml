@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Covid</string>
+
+    <string name="corona">Corona diease (COVID-19) is an infectious diease caused by a newly discovered coronavirus.Most people
+         who fall sick with COVID-19 will experience mild to moderate symptoms and recover without special treatment.
+    </string>
+    <string name="sample_text">Lorem Ispum is simply dummy text of the printing and typesetting industry.</string>
+
+    <string name="viruscauses">The Virus that causes COVID-19 is mainly transmitted through droplets generated when an
+        infection person coughs,sneezes, or exhales.\nThese droplets are too heavy to hang in air,and qucikly fall on floors
+        or surfaces.\nYou can be infected easily.So prevent yourself.Stay Home.Be safe
+    </string>
+    <string name="action_search">Search</string>
+
+
+</resources>
